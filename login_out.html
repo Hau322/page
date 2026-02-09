@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+     <style>
+        html,body{
+            height:100%;
+        }
+        body{
+            background-image: url(./thumbnail_large.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        header h1, .title{
+            text-align: center;
+            padding-top: 5%;
+            font-size: 50px;
+            text-shadow:0 3px 12px white;
+            color: White;
+           
+        }
+        header h1{
+             animation: Up 2s ease;
+        }
+        form{
+            margin: 5% auto ;
+            width: 400px;
+            display:flex;
+            flex-direction: column;
+            border: 2px solid white;
+            border-radius: 10px;
+            justify-content: flex-start;
+            color:white;
+            padding:10px 30px;
+            animation: Up 2s ease;     
+            line-height: 1rem;        
+        }
+        @keyframes Up{
+            from {
+                opacity: 0;
+                transform:translateY(20px);
+            }
+            to {
+                opacity:1;
+                transform:translateY(0px);
+            }
+        }
+        button{
+           width: 100px;
+           margin-bottom: 30px;
+           margin-top: 0px;
+           align-self: center;
+        }
+    </style>
+<body>
+    <header>
+        <h1> Welcome <br>To Hou Word </h1>    </header>
+    <form action="" method="post" class="form">
+        <h1 class="title" >
+          LOGIN
+        </h1>        
+        <label for="email" class="form-label" >Nhập Email </label>
+        <input name="email" tyepe="email" placeholder="Email" class="form-control" ><br><br>
+        <label for="pass"  class="form-label" >Nhập mật khẩu</label>
+        <input name="pass" type="password" placeholder="Password" class="form-control" ><br><br>
+        <input type ="checkbox" name="remenber" class="form-check"> 
+        <label for="remenber" class="form-label" >Nhớ mật khẩu </label><br>
+        <button class="btn btn-outline-light" type="submit"> Nhập</button>
+    </form>
+</body>
+</html>
